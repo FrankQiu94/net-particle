@@ -1,17 +1,16 @@
 # net-particle
 
-demo可参考 [index.html](https://github.com/FrankQiu94/net-particle/blob/master/index.html) 文件
+demo可参考 [点我看demo](https://frankqiu94.github.io/)
 
-js文件为 [index.js](https://github.com/FrankQiu94/net-particle/tree/master/dist)
 
 调用方法为：  
-###第一步：创建canvas标签，定义一个id名，并放在一个div容器中
+##第一步：创建canvas标签，定义一个id名，并放在一个div容器中
 
 		<div class="container">
 			<canvas id="cs">抱歉！您的浏览器版本较低，无法显示更好的效果！</canvas>
 		</div>
 
-###第二步：引入index.js包，随后创建MoveBalls的实例
+##第二步：引入index.js包，随后创建MoveBalls的实例
 
 		<script type="text/javascript" src="/js/index.js"></script>
 		<script type="text/javascript">
