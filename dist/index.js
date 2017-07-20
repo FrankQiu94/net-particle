@@ -72,12 +72,12 @@ MoveBalls.prototype = {
   },
   mouseEvent: function () {
     var _this = this;
-    window.addEventListener("mousemove", function (e) {
+    _this.canvas.addEventListener("mousemove", function (e) {
       var e = e || winodw.event;
-      _this.coordinate.x = e.clientX;
-      _this.coordinate.y = e.clientY;
+      _this.coordinate.x = e.offsetX ? e.offsetX : e.layerX;
+      _this.coordinate.y = e.offsetY ? e.offsetY : e.layerY;
     });
-    window.addEventListener("mouseout", function () {
+    _this.canvas.addEventListener("mouseout", function () {
       _this.coordinate.x = null;
       _this.coordinate.y = null;
     })
