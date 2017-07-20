@@ -1,6 +1,6 @@
 # net-particle
 
-demo可参考 [index.html](https://github.com/FrankQiu94/net-particle/blob/master/index.html) 文件
+demo可参考 [index.html](https://github.com/FrankQiu94/net-particle/blob/master/demo/index.html) 文件
 
 js文件为 [index.js](https://github.com/FrankQiu94/net-particle/tree/master/dist)
 
