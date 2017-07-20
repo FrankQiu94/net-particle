@@ -9,7 +9,9 @@ function MoveBalls(element, opts) {
   var defaultOpts = {
     total: 300,
     color: "#AAAAAA",
-    size: 2
+    size: 2,
+    width: this.canvas.parentNode.clientWidth,
+    height: this.canvas.parentNode.clientHeight
   };
   var opts = opts || defaultOpts;
   for (var key in opts) {
@@ -58,8 +60,8 @@ MoveBalls.prototype = {
   },
   resize: function (self) {
     var _this = self || this;
-    _this.canvas.width = window.innerwidth || document.documentElement.clientWidth || document.body.clientWidth;
-    _this.canvas.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    _this.canvas.width = _this.width;
+    _this.canvas.height = _this.height;
   },
   freshResize: function () {
     this.resize();
